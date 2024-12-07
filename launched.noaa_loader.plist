@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>launched.noaa_loader</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>sh</string>
+      <string>-c</string>
+      <string>/Users/hannahillman/wallpaper/download_noaa.sh</string>
+    </array>
+    <key>StandardOutPath</key>
+    <string>/Users/hannahillman/wallpaper/stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/hannahillman/wallpaper/stderr</string>
+    <key>StartInterval</key>
+    <integer>300</integer>
+  </dict>
+</plist>
