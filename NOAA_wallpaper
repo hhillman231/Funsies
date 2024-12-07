@@ -1,0 +1,13 @@
+#!/bin/sh
+rm /Users/hannahillman/wallpaper/latest1.jpg
+rm /Users/hannahillman/wallpaper/latest2.jpg
+/usr/local/bin/wget https://cdn.star.nesdis.noaa.gov/GOES16/ABI/FD/GEOCOLOR/1808x1808.jpg -O /Users/hannahillman/wallpaper/latest1.jpg;
+/usr/local/bin/wget https://cdn.star.nesdis.noaa.gov/GOES16/ABI/FD/GEOCOLOR/1808x1808.jpg -O /Users/hannahillman/wallpaper/latest2.jpg;
+
+### Comments
+# This is a script to download NOAA images for Hanna into this folder.
+# It is run every 5 minutes. This is done with macOS's job management system.
+# The management system is configured with a "plist" file. 
+# The plist file for this script is saved in /Users/hannahillman/Library/LaunchAgents/launched.noaa_loader.plist
+# A copy is provided here.
+# If the job dies, restart the plist file.
